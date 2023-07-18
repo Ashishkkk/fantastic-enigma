@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Sunnyside Agency Landing Page</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <img src="images/logo.svg" alt="logo" />
+      <img id="ham-logo" onclick="toggle()" src="images/icon-hamburger.svg">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <button id="logo-btn">CONTECT</button>
+      </ul>
+      <div id="hamburger">
+        <div id="nav-before"></div>
+        <ul class="ham-ul">
+          <li><a href="#"  style="color: black;">About</a></li>
+          <li><a  style="color: black;" href="#">Services</a></li>
+          <li><a  style="color: black;" href="#">Projects</a></li>
+          <button id="ham-logo-btn">CONTECT</button>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <section id="section-1">
+      <div class="main-div">
+        <div class="main-content">
+          <h1>Transform your<br>brand</h1>
+          <p>We are a full-service creative agency specializing in helping brands grow fast.
+            Engage your clients through compelling visuals that do most of the marketing for you.</p>
+          <button id="btn-1">Learn more</button>
+        </div>
+        <div>
+          <img src="images/desktop/image-transform.jpg" alt="image-transform">
+        </div>
+      </div>
+
+      <div class="main-div stand-out">
+        <div class="main-content">
+          <h1>Stand out to the right audience</h1>
+          <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
+            we’ll build and extend your brand in digital places.</p>
+          <button id="btn-2">Learn more</button>
+        </div>
+        <div>
+          <img src="images/desktop/image-stand-out.jpg" alt="image-transform">
+        </div>
+      </div>
+    </section>
+
+    <section id="section-2">
+      <div class="grapho-container">
+        <div class="gc"><img src="images/desktop/image-graphic-design.jpg" alt="image-graphic-design"></div>
+        <div class="grapho-content gr">
+          <h1>Graphic design</h1>
+          <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+            potential clients’ attention.</p>
+        </div>
+      </div>
+
+      <div class="grapho-container">
+        <div class="gc"><img src="images/desktop/image-photography.jpg" alt="photographers"></div>
+        <div class="grapho-content bl">
+          <h1>Photography</h1>
+          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business
+            image.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="section-3">
+      <h1>C L I E N T S &nbsp T E S T I M O N I A L S</h1>
+      <div id="clients-cards">
+        <div class="clients">
+          <img src="images/image-emily.jpg" alt="Emily">
+          <p class="cln-details">We put our trust in Sunnyside and they delivered, making sure our needs were met and
+            deadlines were always hit.</p>
+          <h4>Emily R.</h4>
+          <p class="cln-post">Marketing Director</p>
+        </div>
+
+        <div class="clients">
+          <img src="images/image-thomas.jpg" alt="Thomas">
+          <p class="cln-details">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it
+            a satisfying and enjoyable experience.</p>
+          <h4>Thomas S.</h4>
+          <p class="cln-post">Chief Operating Officer</p>
+        </div>
+
+        <div class="clients">
+          <img src="images/image-jennie.jpg" alt="Jennie">
+          <p class="cln-details">Incredible end result! Our sales increased over 400% when we worked with Sunnyside.
+            Highly recommended!</p>
+          <h4>Jennie F.</h4>
+          <p class="cln-post">Business Owner</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="section-4">
+      <img src="images/desktop/image-gallery-milkbottles.jpg" alt="image-gallery-milkbottles">
+      <img src="images/desktop/image-gallery-orange.jpg" alt="image-gallery-orange">
+      <img src="images/desktop/image-gallery-cone.jpg" alt="image-gallery-cone">
+      <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="image-gallery-sugarcubes">
+    </section>
+  </main>
+
+
+  <footer>
+    <img id="footer-logo" src="images/logo.svg" alt="logo">
+    <div id="footer-bar">
+      <ul id="footer-bar-ul">
+        <li>About</li>
+        <li>Projects</li>
+        <li>Content</li>
+      </ul>
+    </div>
+    <div id="social-icon">
+      <i><a href="#" class="fa fa-facebook"></a></i>
+      <i><a href="#" class="fa fa-instagram"></a></i>
+      <i><a href="#" class="fa fa-twitter"></a></i>
+      <i><a href="#" class="fa fa-pinterest"></a></i>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

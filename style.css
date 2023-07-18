@@ -1,0 +1,489 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+  --Soft-red: hsl(7, 99%, 70%);
+  --Yellow: hsl(51, 100%, 49%);
+  --Dark-desaturated-cyan: hsl(167, 40%, 24%); /*(graphic design text)*/
+  --Dark-blue: hsl(198, 62%, 26%); /*(photography text)*/
+  --Dark-moderate-cyan: hsl(168, 34%, 41%); /* (footer)*/
+  --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --Very-dark-grayish-blue: hsl(210, 53%, 59%);
+  --Dark-grayish-blue: hsl(232, 10%, 55%);
+  --Grayish-blue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  font-size: 18px;
+}
+
+header {
+  position: relative;
+  background: url(images/desktop/image-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100vh;
+  height: 100vh;
+}
+
+header::before {
+  content: "WE ARE CREATIVES";
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  font-size: xxx-large;
+  color: white;
+  font-weight: 600;
+}
+
+header::after {
+  content: "";
+  background: url(images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 45%;
+  left: 48%;
+  width: 37px;
+  height: 115px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+#hamburger {
+  display: none;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: var(--White);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+#logo-btn {
+  border: none;
+  background: var(--White);
+  padding: 0.6rem 0.8rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#logo-btn:hover {
+  color: white;
+  background: rgb(22, 169, 253);
+}
+
+.main-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.stand-out {
+  flex-direction: row-reverse;
+}
+
+.main-div img {
+  height: 85.5vh;
+}
+
+.main-div .main-content {
+  margin: 0 8rem;
+}
+
+.main-content h1 {
+  font-family: Fraunces;
+  font-weight: 900;
+}
+
+.main-div .main-content p {
+  font-family: Barlow;
+  font-weight: 600;
+  padding: 1.5rem 0;
+  color: var(--Dark-grayish-blue);
+}
+
+#btn-1 {
+  position: relative;
+  border: none;
+  background: none;
+  font-size: large;
+  cursor: pointer;
+  font-family: Fraunces;
+  z-index: 1;
+}
+#btn-1::after {
+  content: "";
+  position: absolute;
+  background: var(--Yellow);
+  top: 14px;
+  left: -4px;
+  width: 110%;
+  height: 9px;
+  border-radius: 5px;
+  opacity: 0.4;
+  z-index: -1;
+}
+#btn-1:hover::after {
+  opacity: 1;
+}
+
+#btn-2 {
+  position: relative;
+  border: none;
+  background: none;
+  font-size: large;
+  cursor: pointer;
+  font-family: Fraunces;
+  z-index: 1;
+}
+#btn-2::after {
+  content: "";
+  position: absolute;
+  background: var(--Soft-red);
+  top: 14px;
+  left: -4px;
+  width: 110%;
+  height: 9px;
+  border-radius: 5px;
+  opacity: 0.4;
+  z-index: -1;
+}
+#btn-2:hover::after {
+  opacity: 1;
+}
+
+#ham-logo {
+  display: none;
+}
+
+/* section-2 Photography/Graphic design */
+#section-2 {
+  display: flex;
+  width: 100%;
+}
+.grapho-container {
+  position: relative;
+}
+.grapho-container img {
+  width: 100%;
+}
+.grapho-content {
+  position: absolute;
+  width: 55%;
+  top: 70%;
+  left: 30%;
+}
+.grapho-content > h1 {
+  font-family: Fraunces;
+}
+.grapho-content > p {
+  font-family: Barlow;
+}
+.gr {
+  color: var(--Dark-desaturated-cyan);
+}
+.bl {
+  color: var(--Dark-blue);
+}
+
+/* section-3 clients textimonials  ------------------*/
+
+#section-3 {
+  text-align: center;
+  margin: 10rem 0;
+}
+#section-3 > h1 {
+  font-family: Fraunces;
+  font-weight: 600;
+  color: var(--Grayish-blue);
+}
+#section-3 #clients-cards {
+  display: flex;
+  justify-content: space-around;
+}
+.clients {
+  width: 25%;
+}
+.clients img {
+  margin: 5rem 0;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+}
+.cln-details {
+  font-family: Barlow;
+  color: var(--Dark-grayish-blue);
+  margin-bottom: 5rem;
+}
+
+.clients h4 {
+  font-family: Fraunces;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+.cln-post {
+  font-family: Barlow;
+  color: var(--Grayish-blue);
+}
+
+/* section-4 images */
+#section-4 {
+  display: flex;
+}
+#section-4 img {
+  width: 25%;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--Dark-moderate-cyan);
+  height: 50vh;
+}
+#footer-logo {
+  margin-top: 1rem;
+  width: 14%;
+}
+#footer-bar-ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer-bar-ul > li {
+  margin: 1rem;
+  color: var(--Dark-desaturated-cyan);
+}
+#footer-bar-ul > li:hover {
+  margin: 1rem;
+  color: var(--White);
+  cursor: pointer;
+}
+
+#social-icon {
+  display: flex;
+  justify-content: space-around;
+  width: 15%;
+}
+#social-icon a {
+  text-decoration: none;
+}
+#social-icon .fa {
+  color: var(--Dark-desaturated-cyan);
+  font-size: 1.5rem;
+}
+#social-icon .fa:hover {
+  color: var(--White);
+}
+
+/* media querry for mobile 375px */
+
+@media only screen and (max-width: 375px) {
+  header {
+    max-width: 100%;
+    width: 456px;
+    background-size: 215% 100%;
+  }
+  header::before {
+    content: "WE ARE CREATIVES";
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    left: 23%;
+    width: 55%;
+    font-size: xx-large;
+    color: white;
+    font-weight: 600;
+  }
+  header nav ul {
+    display: none;
+  }
+  #section-1 {
+    max-width: 375px;
+  }
+
+  .main-div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .main-div > img {
+    width: 375px;
+    height: auto;
+  }
+  .main-div .main-content {
+    text-align: center;
+    margin: 4rem 1rem;
+  }
+
+
+  #section-2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+  }
+
+  .grapho-container {
+    position: relative;
+  }
+  .gc {
+    max-width: 100%;
+    height: 99vh;
+    overflow: hidden;
+  }
+  .gc img {
+    align-items: center;
+    width: 195%;
+    margin-left: -172px;
+  }
+
+  .grapho-content {
+    position: absolute;
+    text-align: center;
+    width: 95%;
+    top: 70%;
+    left: 2%;
+  }
+  .grapho-content > p {
+    font-family: Barlow;
+    margin-top: 1em;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  #section-3 {
+    margin: 3em 0;
+  }
+  #section-3 > h1 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  #section-3 #clients-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .clients {
+    width: 90%;
+  }
+  .clients img {
+    margin: 2rem 0;
+    margin-top: 4em;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+  }
+  .cln-details {
+    margin-bottom: 1em;
+    line-height: 1.5;
+  }
+  .clients h4 {
+    margin-top: 1em;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  /* section-4 images */
+  #section-4 {
+    max-width: 375px;
+    flex-wrap: wrap;
+  }
+  #section-4 img {
+    width: 50%;
+  }
+
+/* footer */
+
+footer {
+  display: block;
+  align-items: center;
+  height: 50vh;
+}
+#footer-logo {
+  margin: 2em 6em;
+  width: 45%;
+}
+#footer-bar-ul > li {
+  margin: 0 1em;
+}
+#social-icon {
+  width: 45%;
+  margin: 4em 6em;
+}
+
+/* Navigetion */
+
+nav {
+  position: relative;
+}
+
+#nav-before {
+  margin-top: -1.8em;
+  margin-left: 14.15em;
+  width: 45px;
+  height: 33px;
+  background: linear-gradient( 
+325deg, white 50%, transparent 50%);
+}
+
+#hamburger {
+  position: absolute;
+  width: 80%;
+  height: 300px;
+  background-color: white;
+  z-index: 1;
+  top: 130%;
+  display: none;
+}
+#ham-logo {
+  display: block;
+}
+.ham-ul{
+  display: flex;
+  flex-direction: column;
+  color: black;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+#hamburger .ham-ul ul li{
+  list-style: none;
+  color: black;
+}
+
+#ham-logo-btn {
+  border: none;
+  padding: 1em 2em;
+  border-radius: 22px;
+  background: var(--Yellow);
+}
+
+
+
+
+
+
+}
